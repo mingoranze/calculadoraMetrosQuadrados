@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F1FFE7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #BAFF29;
+    text-align: center;
+    font-size: 30px;
+}
+h3 {
+   color: #C2E7DA;
+   font-size: 16px;
+   padding: 7px 0px;
+   font-weight: normal;
+}
+.area {
+    display: flex;
+    width: 70%;
+    height: 85%;
+    justify-content:center;
+    align-items: center;
+}
+.calculadora {
+    width: 50%;
+    height: 100%;
+    background-color: #1A1B41;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resultado {
+    width: 50%;
+    height: 100%;
+    background-color: #6290C3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #1A1B41;
+    text-transform: uppercase;
+    font-size: 25px;
+    flex-direction: column;
+}
+.calculadoraArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: 80px;
+}
+#quantidadeB,
+#quantidadeA {
+    width: 87px;
+    margin-top: 5px;
+}
+#enviar {
+    margin-top: 15px;
+    border: none;
+    padding: 5px 22px;
+    border-radius: 5px;
+    background-color: #BAFF29;
+}
+
+.embalagemItem {
+    display: flex;
+    align-items: baseline;
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    font-size: 15px;
+    text-transform: lowercase;
+    text-align: center;
+}
+.parede {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+    color: #C2E7DA;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+.checkbox {
+    flex-direction: row;
+}
+#completo18 {
+    display: none;
+
+}
+#completoGL {
+    display: none;
+}
+#completoQuartinho {
+    display: none;
+}
