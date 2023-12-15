@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'montserrat';
 }
 body {
     background-color: #F1FFE7;
@@ -13,18 +14,22 @@ body {
 h1 {
     color: #BAFF29;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
 }
 h3 {
    color: #C2E7DA;
-   font-size: 16px;
+   font-size: 14px;
    padding: 7px 0px;
    font-weight: normal;
+   text-align: center;
+   text-transform: uppercase;
+
 }
 .area {
     display: flex;
     width: 70%;
-    height: 85%;
+    height: 90%;
     justify-content:center;
     align-items: center;
 }
@@ -53,9 +58,30 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-input {
-    width: 80px;
+.inputNumber {
+    padding: 4px 5px;
+    border: none;
+    background-color: #1A1B41;
+    border-bottom: solid 1px #BAFF29;
+    color: #BAFF29;
+    margin-top: 5px;
 }
+label p {
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.inputNumber::placeholder {
+    color: #BAFF29;
+    font-size: 10px;
+    font-weight: 300;
+}
+.inputNumber:focus {
+    border: none;
+    outline: none;
+    border: solid 1px #BAFF29;
+}
+
 #quantidadeB,
 #quantidadeA {
     width: 87px;
@@ -67,8 +93,13 @@ input {
     padding: 5px 22px;
     border-radius: 5px;
     background-color: #BAFF29;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-
+#enviar:hover {
+    background-color: #86c400;
+}
 .embalagemItem {
     display: flex;
     align-items: baseline;
@@ -82,12 +113,15 @@ p {
     font-size: 15px;
     text-transform: lowercase;
     text-align: center;
+    margin-right: 5px;
 }
 .parede {
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin-bottom: 3px;
     color: #C2E7DA;
+    box-shadow: 1px 1px 5px #000;
 }
 label {
     display: flex;

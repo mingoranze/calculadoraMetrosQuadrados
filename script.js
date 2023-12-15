@@ -20,17 +20,43 @@ const enviar = document.querySelector('#enviar').addEventListener('click', ()=>{
     const galaoTexto = document.querySelector('#completoGL p')
     const quartoTexto = document.querySelector('#completoQuartinho p')
 
-    const checkboxPorta = document.querySelector('#porta')
-    const checkboxJanela = document.querySelector('#janela')
+    const checkboxPortaA = document.querySelector('#portaA')
+    const checkboxJanelaA = document.querySelector('#janelaA')
+
+    const checkboxPortaB = document.querySelector('#portaB')
+    const checkboxJanelaB = document.querySelector('#janelaB')
 
     const porta = 1.8
     const janela = 1.2
 
-    const total = areaA+areaB
-    if (checkboxPorta.checked) {
-        console.log(total - porta )
+    let total = areaA+areaB
+
+    if (checkboxPortaA.checked) {
+        total = (areaA+areaB) - porta
     } else {
-        
+        let total = areaA+areaB
+
+    }
+    if (checkboxPortaB.checked) {
+        total = (areaA+areaB) - porta
+    } else {
+        let total = areaA+areaB
+
+    }
+    
+    if (checkboxJanelaA.checked) {
+        total = (areaA+areaB) - janela
+       
+    } else {
+        let total = areaA+areaB
+
+    }
+    if (checkboxJanelaB.checked) {
+        total = (areaA+areaB) - janela
+       
+    } else {
+        let total = areaA+areaB
+
     }
 
     if (total > 0) {
@@ -58,7 +84,7 @@ const enviar = document.querySelector('#enviar').addEventListener('click', ()=>{
     }
 
     if (total > 60) {
-        const lataUnidade = total / 130
+        const lataUnidade = total / 100
         lata.style.display = 'flex'
         lataTexto.innerHTML = `Você vai precisar de ${Math.ceil(lataUnidade)} unidade de 18 litros de tinta`
 
