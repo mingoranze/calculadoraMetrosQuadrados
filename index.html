@@ -17,7 +17,7 @@
             <div class="calculadoraArea">
                 <h3>Qual são as medidas da sua parede?</h3>
 
-               <div class="parede">
+               <div id="paredeUm" class="parede">
                 <h3>Parede 1</h3>
                 <label for="alturaA">
                     <p> Qual a altura da parede</p>   
@@ -31,14 +31,16 @@
                     <p>Quantas paredes possuem essas medidas</p>               
                     <input class="inputNumber" id="quantidadeA" type="number" name="quantidadeA" placeholder="Quantidade">
                 </label>
-                <label for="portaA" class="checkbox">
-                    <p>Essa parede possui porta?</p>        
-                    <input type="checkbox" name="portaA" id="portaA">
-                </label>
-                <label for="janela" class="checkbox">
-                    <p>Essa parede possui janela?</p>                   
-                     <input type="checkbox" name="janela" id="janelaA">
-                </label>
+                <div class="check-area">
+                    <label for="portaA" class="checkbox">
+                        <p>Essa parede possui porta?</p>        
+                        <input type="checkbox" name="portaA" id="portaA">
+                    </label>
+                    <label for="janela" class="checkbox">
+                        <p>Essa parede possui janela?</p>                   
+                         <input type="checkbox" name="janela" id="janelaA">
+                    </label>
+                </div>
                 
                </div>
 
@@ -56,14 +58,16 @@
                     <p>Quantas paredes possuem essas medidas</p>               
                     <input class="inputNumber" id="quantidadeB" type="number" name="quantidadeB" placeholder="Quantidade">
                 </label>
-                <label for="porta" class="checkbox">
-                    <p>Essa parede possui porta?</p>        
-                    <input type="checkbox" name="porta" id="portaB">
-                </label>
-                <label for="janela" class="checkbox">
-                    <p>Essa parede possui janela?</p>                   
-                    <input type="checkbox" name="janela" id="janelaB">
-                </label>
+                <div class="check-area">
+                    <label for="porta" class="checkbox">
+                        <p>Essa parede possui porta?</p>        
+                        <input type="checkbox" name="porta" id="portaB">
+                    </label>
+                    <label for="janela" class="checkbox">
+                        <p>Essa parede possui janela?</p>                   
+                        <input type="checkbox" name="janela" id="janelaB">
+                    </label>
+                </div>
                </div>
 
                <input id="enviar" type="submit">

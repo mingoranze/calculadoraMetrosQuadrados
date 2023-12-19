@@ -60,9 +60,10 @@ const enviar = document.querySelector('#enviar').addEventListener('click', ()=>{
     }
 
     if (total > 0) {
+        resultado.style.display = 'flex'
         resultado.innerHTML = `Você tem ${total.toFixed(2)}m²`
     } else {
-        resultado.innerHTML = ''
+        resultado.style.display = 'none'
     }
 
     if (total <= 10 && total > 0) {
