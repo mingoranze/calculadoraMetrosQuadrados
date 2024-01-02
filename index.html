@@ -13,63 +13,31 @@
 <body>
     <div class="area">
         <div class="calculadora">
-            <h1>Calcule o m²</h1>
-            <div class="calculadoraArea">
-                <h3>Qual são as medidas da sua parede?</h3>
-
-               <div id="paredeUm" class="parede">
-                <h3>Parede 1</h3>
-                <label for="alturaA">
+            <h1>Calculadora de M²</h1>
+            <div class="calculadoraArea">   
+                <div id="paredeUm" class="parede">
+                   <h3>Qual são as medidas da sua parede?</h3>
+                <label for="altura">
                     <p> Qual a altura da parede</p>   
-                    <input class="inputNumber" id="alturaA" type="number" name="alturaA" placeholder="Altura"> 
+                    <input class="inputNumber" id="altura" type="number" name="altura" placeholder="Altura"> 
                 </label>
-                <label for="larguraA">
+                <label for="largura">
                     <p>Qual a largura da parede</p>          
-                    <input class="inputNumber" id="larguraA" type="number" name="larguraA" placeholder="Largura">
+                    <input class="inputNumber" id="largura" type="number" name="largura" placeholder="Largura">
                 </label>
-                <label for="quantidadeA">
+                <label for="quantidade">
                     <p>Quantas paredes possuem essas medidas</p>               
-                    <input class="inputNumber" id="quantidadeA" type="number" name="quantidadeA" placeholder="Quantidade">
+                    <input class="inputNumber" id="quantidade" type="number" name="quantidade" placeholder="Quantidade">
                 </label>
-                <div class="check-area">
-                    <label for="portaA" class="checkbox">
-                        <p>Essa parede possui porta?</p>        
-                        <input type="checkbox" name="portaA" id="portaA">
-                    </label>
-                    <label for="janela" class="checkbox">
-                        <p>Essa parede possui janela?</p>                   
-                         <input type="checkbox" name="janela" id="janelaA">
-                    </label>
-                </div>
-                
+                <label for="porta" >
+                    <p>Essa parede possui porta?</p>        
+                    <input class="inputNumber" type="number" name="porta" id="porta" placeholder="Quantidade">
+                </label>
+                <label for="janela" >
+                    <p>Essa parede possui janela?</p>                   
+                    <input class="inputNumber" type="number" name="janela" id="janela" placeholder="Quantidade">
+                </label>
                </div>
-
-               <div class="parede">
-                <h3>Parede 2</h3>
-                <label for="alturaB">
-                    <p> Qual a altura da parede</p>   
-                    <input class="inputNumber" id="alturaB" type="number" name="alturaB" placeholder="Altura"> 
-                </label>
-                <label for="larguraB">
-                    <p>Qual a largura da parede</p>          
-                    <input class="inputNumber" id="larguraB" type="number" name="larguraB" placeholder="Largura">
-                </label>
-                <label for="quantidadeB">
-                    <p>Quantas paredes possuem essas medidas</p>               
-                    <input class="inputNumber" id="quantidadeB" type="number" name="quantidadeB" placeholder="Quantidade">
-                </label>
-                <div class="check-area">
-                    <label for="porta" class="checkbox">
-                        <p>Essa parede possui porta?</p>        
-                        <input type="checkbox" name="porta" id="portaB">
-                    </label>
-                    <label for="janela" class="checkbox">
-                        <p>Essa parede possui janela?</p>                   
-                        <input type="checkbox" name="janela" id="janelaB">
-                    </label>
-                </div>
-               </div>
-
                <input id="enviar" type="submit">
             </div>
         </div>

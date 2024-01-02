@@ -16,6 +16,7 @@ h1 {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 h3 {
    color: #C2E7DA;
@@ -93,7 +94,6 @@ label p {
     border: solid 1px #BAFF29;
 }
 
-#quantidadeB,
 #quantidadeA {
     width: 87px;
     margin-top: 5px;
@@ -149,13 +149,6 @@ label {
     margin-bottom: 3px;
     font-size: 15px;
 }
-.check-area {
-    display: flex;
-}
-.checkbox {
-    flex-direction: row;
-    margin: 8px 2px;
-}
 #completo18 {
     display: none;
 
@@ -180,9 +173,7 @@ label {
         width: 90%;
         height: 30%;
     }
-    #paredeUm {
-        display: none;
-    }
+
     .resultado {
         flex-direction: row;
         align-items: center;

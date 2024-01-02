@@ -1,16 +1,17 @@
-const alturaA = document.querySelector('#alturaA')
-const larguraA = document.querySelector('#larguraA')
-const quantidadeA = document.querySelector('#quantidadeA')
+const altura = document.querySelector('#altura')
+const largura = document.querySelector('#largura')
+const quantidade = document.querySelector('#quantidade')
 
-const alturaB = document.querySelector('#alturaB')
-const larguraB = document.querySelector('#larguraB')
-const quantidadeB = document.querySelector('#quantidadeB')
+const portaValue = document.querySelector('#porta')
+const janelaValue = document.querySelector('#janela')
 
 const resultado = document.querySelector('#resultado')
 
+const porta = 1.8
+const janela = 1.2
 const enviar = document.querySelector('#enviar').addEventListener('click', ()=>{
-    const areaA = (alturaA.value*larguraA.value)*quantidadeA.value
-    const areaB = (alturaB.value*larguraB.value)*quantidadeB.value
+    const area = ((altura.value*largura.value)*quantidade.value) - (janelaValue.value*janela) - (portaValue.value*porta)
+
     
     const lata = document.querySelector('#completo18')
     const galao = document.querySelector('#completoGL')
@@ -20,44 +21,13 @@ const enviar = document.querySelector('#enviar').addEventListener('click', ()=>{
     const galaoTexto = document.querySelector('#completoGL p')
     const quartoTexto = document.querySelector('#completoQuartinho p')
 
-    const checkboxPortaA = document.querySelector('#portaA')
-    const checkboxJanelaA = document.querySelector('#janelaA')
-
-    const checkboxPortaB = document.querySelector('#portaB')
-    const checkboxJanelaB = document.querySelector('#janelaB')
-
-    const porta = 1.8
-    const janela = 1.2
-
-    let total = areaA+areaB
-
-    if (checkboxPortaA.checked) {
-        total = (areaA+areaB) - porta
-    } else {
-        let total = areaA+areaB
-
-    }
-    if (checkboxPortaB.checked) {
-        total = (areaA+areaB) - porta
-    } else {
-        let total = areaA+areaB
-
-    }
     
-    if (checkboxJanelaA.checked) {
-        total = (areaA+areaB) - janela
-       
-    } else {
-        let total = areaA+areaB
+    
+    
+    let total = area
+    
 
-    }
-    if (checkboxJanelaB.checked) {
-        total = (areaA+areaB) - janela
-       
-    } else {
-        let total = areaA+areaB
 
-    }
 
     if (total > 0) {
         resultado.style.display = 'flex'
@@ -94,10 +64,9 @@ const enviar = document.querySelector('#enviar').addEventListener('click', ()=>{
     }
 
 
-    alturaA.value = ''
-    alturaB.value = ''
-    larguraA.value = ''
-    larguraB.value = ''
-    quantidadeA.value = ''
-    quantidadeB.value = ''
+    altura.value = ''
+    largura.value = ''
+    quantidade.value = ''
+    portaValue.value = ''
+    janelaValue.value = ''
 })
